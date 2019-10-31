@@ -815,6 +815,7 @@ table! {
     }
 }
 
+/* Empty
 table! {
     mdl_data (id) {
         id -> Int8,
@@ -852,7 +853,8 @@ table! {
         notification -> Int8,
     }
 }
-
+ */
+/* Empty
 table! {
     mdl_data_content (id) {
         id -> Int8,
@@ -865,7 +867,8 @@ table! {
         content4 -> Nullable<Text>,
     }
 }
-
+ */
+/* Empty
 table! {
     mdl_data_fields (id) {
         id -> Int8,
@@ -886,7 +889,8 @@ table! {
         param10 -> Nullable<Text>,
     }
 }
-
+*/
+/* Empty
 table! {
     mdl_data_records (id) {
         id -> Int8,
@@ -898,7 +902,7 @@ table! {
         approved -> Int2,
     }
 }
-
+*/
 table! {
     mdl_enrol (id) {
         id -> Int8,
@@ -2717,6 +2721,7 @@ table! {
     }
 }
 
+/* Empty
 table! {
     mdl_question (id) {
         id -> Int8,
@@ -2741,6 +2746,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_answers (id) {
         id -> Int8,
@@ -2753,6 +2759,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_attempts (id) {
         id -> Int8,
@@ -2771,6 +2778,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_attempt_step_data (id) {
         id -> Int8,
@@ -2780,6 +2788,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_attempt_steps (id) {
         id -> Int8,
@@ -2792,6 +2801,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_calculated (id) {
         id -> Int8,
@@ -2804,6 +2814,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_calculated_options (id) {
         id -> Int8,
@@ -2822,6 +2833,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_categories (id) {
         id -> Int8,
@@ -2835,6 +2847,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_dataset_definitions (id) {
         id -> Int8,
@@ -2847,6 +2860,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_dataset_items (id) {
         id -> Int8,
@@ -2856,6 +2870,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_datasets (id) {
         id -> Int8,
@@ -2864,6 +2879,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_hints (id) {
         id -> Int8,
@@ -2876,6 +2892,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_match (id) {
         id -> Int8,
@@ -2892,6 +2909,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_match_sub (id) {
         id -> Int8,
@@ -2903,6 +2921,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_multianswer (id) {
         id -> Int8,
@@ -2911,6 +2930,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_multichoice (id) {
         id -> Int8,
@@ -2930,6 +2950,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_numerical (id) {
         id -> Int8,
@@ -2939,6 +2960,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_numerical_options (id) {
         id -> Int8,
@@ -2950,6 +2972,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_numerical_units (id) {
         id -> Int8,
@@ -2959,6 +2982,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_randomsamatch (id) {
         id -> Int8,
@@ -2967,6 +2991,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_sessions (id) {
         id -> Int8,
@@ -2981,6 +3006,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_shortanswer (id) {
         id -> Int8,
@@ -2990,6 +3016,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_states (id) {
         id -> Int8,
@@ -3005,6 +3032,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_truefalse (id) {
         id -> Int8,
@@ -3014,6 +3042,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_question_usages (id) {
         id -> Int8,
@@ -3023,6 +3052,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_quiz (id) {
         id -> Int8,
@@ -3067,6 +3097,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_quiz_attempts (id) {
         id -> Int8,
@@ -3087,6 +3118,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_quiz_feedback (id) {
         id -> Int8,
@@ -3098,6 +3130,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_quiz_grades (id) {
         id -> Int8,
@@ -3108,6 +3141,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_quiz_overrides (id) {
         id -> Int8,
@@ -3122,6 +3156,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_quiz_overview_regrades (id) {
         id -> Int8,
@@ -3134,6 +3169,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_quiz_question_instances (id) {
         id -> Int8,
@@ -3143,6 +3179,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_quiz_question_response_stats (id) {
         id -> Int8,
@@ -3156,6 +3193,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_quiz_question_statistics (id) {
         id -> Int8,
@@ -3176,6 +3214,7 @@ table! {
         randomguessscore -> Nullable<Numeric>,
     }
 }
+ */
 
 table! {
     mdl_quiz_reports (id) {
@@ -3186,6 +3225,7 @@ table! {
     }
 }
 
+/* Empty
 table! {
     mdl_quiz_statistics (id) {
         id -> Int8,
@@ -3206,6 +3246,7 @@ table! {
         standarderror -> Nullable<Numeric>,
     }
 }
+*/
 
 table! {
     mdl_rating (id) {
@@ -4636,10 +4677,10 @@ allow_tables_to_appear_in_same_query!(
     mdl_course_sections,
     mdl_course_sections_availability,
     mdl_course_sections_avail_fields,
-    mdl_data,
-    mdl_data_content,
-    mdl_data_fields,
-    mdl_data_records,
+    //mdl_data,
+    //mdl_data_content,
+    //mdl_data_fields,
+    //mdl_data_records,
     mdl_enrol,
     mdl_enrol_authorize,
     mdl_enrol_authorize_refunds,
@@ -4766,42 +4807,42 @@ allow_tables_to_appear_in_same_query!(
     mdl_post,
     mdl_profiling,
     mdl_qtype_essay_options,
-    mdl_question,
-    mdl_question_answers,
-    mdl_question_attempts,
-    mdl_question_attempt_step_data,
-    mdl_question_attempt_steps,
-    mdl_question_calculated,
-    mdl_question_calculated_options,
-    mdl_question_categories,
-    mdl_question_dataset_definitions,
-    mdl_question_dataset_items,
-    mdl_question_datasets,
-    mdl_question_hints,
-    mdl_question_match,
-    mdl_question_match_sub,
-    mdl_question_multianswer,
-    mdl_question_multichoice,
-    mdl_question_numerical,
-    mdl_question_numerical_options,
-    mdl_question_numerical_units,
-    mdl_question_randomsamatch,
-    mdl_question_sessions,
-    mdl_question_shortanswer,
-    mdl_question_states,
-    mdl_question_truefalse,
-    mdl_question_usages,
-    mdl_quiz,
-    mdl_quiz_attempts,
-    mdl_quiz_feedback,
-    mdl_quiz_grades,
-    mdl_quiz_overrides,
-    mdl_quiz_overview_regrades,
-    mdl_quiz_question_instances,
-    mdl_quiz_question_response_stats,
-    mdl_quiz_question_statistics,
+    //mdl_question,
+    //mdl_question_answers,
+    //mdl_question_attempts,
+    //mdl_question_attempt_step_data,
+    //mdl_question_attempt_steps,
+    //mdl_question_calculated,
+    //mdl_question_calculated_options,
+    //mdl_question_categories,
+    //mdl_question_dataset_definitions,
+    //mdl_question_dataset_items,
+    //mdl_question_datasets,
+    //mdl_question_hints,
+    //mdl_question_match,
+    //mdl_question_match_sub,
+    //mdl_question_multianswer,
+    //mdl_question_multichoice,
+    //mdl_question_numerical,
+    //mdl_question_numerical_options,
+    //mdl_question_numerical_units,
+    //mdl_question_randomsamatch,
+    //mdl_question_sessions,
+    //mdl_question_shortanswer,
+    //mdl_question_states,
+    //mdl_question_truefalse,
+    //mdl_question_usages,
+    //mdl_quiz,
+    //mdl_quiz_attempts,
+    //mdl_quiz_feedback,
+    //mdl_quiz_grades,
+    //mdl_quiz_overrides,
+    //mdl_quiz_overview_regrades,
+    //mdl_quiz_question_instances,
+    //mdl_quiz_question_response_stats,
+    //mdl_quiz_question_statistics,
     mdl_quiz_reports,
-    mdl_quiz_statistics,
+    //mdl_quiz_statistics,
     mdl_rating,
     mdl_registration_hubs,
     mdl_repository,
