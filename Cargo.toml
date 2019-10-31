@@ -1,0 +1,11 @@
+[package]
+name = "moodle-export-archive"
+version = "0.1.0"
+authors = ["Rasmus Kaj <kaj@kth.se>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+diesel = { version = "1.4.0", features = ["chrono", "postgres", "64-column-tables"] }
+dotenv = "0.15"
