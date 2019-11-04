@@ -903,6 +903,8 @@ table! {
     }
 }
 */
+/* Nothing useful?
+Also more than 32 columns, which makes diesel compile times longer.
 table! {
     mdl_enrol (id) {
         id -> Int8,
@@ -1010,6 +1012,7 @@ table! {
         timeupdated -> Int8,
     }
 }
+ */
 
 table! {
     mdl_event (id) {
@@ -1257,6 +1260,7 @@ table! {
     }
 }
 
+// File areas "submission_files", "feedback_files", and "feedback_files_batch".
 table! {
     mdl_files (id) {
         id -> Int8,
@@ -1956,6 +1960,7 @@ table! {
     }
 }
 
+/* Empty
 table! {
     mdl_lesson (id) {
         id -> Int8,
@@ -2000,7 +2005,7 @@ table! {
         timemodified -> Int8,
     }
 }
-
+/ Empty
 table! {
     mdl_lesson_answers (id) {
         id -> Int8,
@@ -2018,7 +2023,7 @@ table! {
         responseformat -> Int2,
     }
 }
-
+/ Empty
 table! {
     mdl_lesson_attempts (id) {
         id -> Int8,
@@ -2032,7 +2037,7 @@ table! {
         timeseen -> Int8,
     }
 }
-
+/ Empty
 table! {
     mdl_lesson_branch (id) {
         id -> Int8,
@@ -2044,7 +2049,7 @@ table! {
         timeseen -> Int8,
     }
 }
-
+/ Empty
 table! {
     mdl_lesson_grades (id) {
         id -> Int8,
@@ -2055,7 +2060,7 @@ table! {
         completed -> Int8,
     }
 }
-
+/ Empty
 table! {
     mdl_lesson_high_scores (id) {
         id -> Int8,
@@ -2065,7 +2070,7 @@ table! {
         nickname -> Varchar,
     }
 }
-
+/ Empty
 table! {
     mdl_lesson_pages (id) {
         id -> Int8,
@@ -2083,7 +2088,7 @@ table! {
         contentsformat -> Int2,
     }
 }
-
+/ Empty
 table! {
     mdl_lesson_timer (id) {
         id -> Int8,
@@ -2093,7 +2098,7 @@ table! {
         lessontime -> Int8,
     }
 }
-
+*/
 table! {
     mdl_license (id) {
         id -> Int8,
@@ -3465,6 +3470,7 @@ table! {
     }
 }
 
+/* Empty
 table! {
     mdl_scorm (id) {
         id -> Int8,
@@ -3506,6 +3512,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_scorm_aicc_session (id) {
         id -> Int8,
@@ -3523,6 +3530,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_scorm_scoes (id) {
         id -> Int8,
@@ -3537,6 +3545,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_scorm_scoes_data (id) {
         id -> Int8,
@@ -3546,6 +3555,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_scorm_scoes_track (id) {
         id -> Int8,
@@ -3559,6 +3569,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_scorm_seq_mapinfo (id) {
         id -> Int8,
@@ -3572,6 +3583,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_scorm_seq_objective (id) {
         id -> Int8,
@@ -3583,6 +3595,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_scorm_seq_rolluprule (id) {
         id -> Int8,
@@ -3595,6 +3608,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_scorm_seq_rolluprulecond (id) {
         id -> Int8,
@@ -3605,6 +3619,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_scorm_seq_rulecond (id) {
         id -> Int8,
@@ -3617,6 +3632,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_scorm_seq_ruleconds (id) {
         id -> Int8,
@@ -3626,6 +3642,7 @@ table! {
         action -> Varchar,
     }
 }
+ */
 
 table! {
     mdl_sessions (id) {
@@ -3862,6 +3879,7 @@ table! {
     }
 }
 
+/* Empty
 table! {
     mdl_turnitintooltwo (id) {
         id -> Int8,
@@ -3917,7 +3935,7 @@ table! {
         institution_check -> Nullable<Int2>,
     }
 }
-
+*/
 table! {
     mdl_turnitintooltwo_courses (id) {
         id -> Int8,
@@ -4681,11 +4699,11 @@ allow_tables_to_appear_in_same_query!(
     //mdl_data_content,
     //mdl_data_fields,
     //mdl_data_records,
-    mdl_enrol,
-    mdl_enrol_authorize,
-    mdl_enrol_authorize_refunds,
-    mdl_enrol_flatfile,
-    mdl_enrol_paypal,
+    //mdl_enrol,
+    //mdl_enrol_authorize,
+    //mdl_enrol_authorize_refunds,
+    //mdl_enrol_flatfile,
+    //mdl_enrol_paypal,
     mdl_event,
     mdl_events_handlers,
     mdl_events_queue,
@@ -4751,14 +4769,14 @@ allow_tables_to_appear_in_same_query!(
     mdl_groups_members,
     mdl_imscp,
     mdl_label,
-    mdl_lesson,
-    mdl_lesson_answers,
-    mdl_lesson_attempts,
-    mdl_lesson_branch,
-    mdl_lesson_grades,
-    mdl_lesson_high_scores,
-    mdl_lesson_pages,
-    mdl_lesson_timer,
+    //mdl_lesson,
+    //mdl_lesson_answers,
+    //mdl_lesson_attempts,
+    //mdl_lesson_branch,
+    //mdl_lesson_grades,
+    //mdl_lesson_high_scores,
+    //mdl_lesson_pages,
+    //mdl_lesson_timer,
     mdl_license,
     mdl_log,
     mdl_log_display,
@@ -4861,17 +4879,17 @@ allow_tables_to_appear_in_same_query!(
     mdl_role_sortorder,
     mdl_scale,
     mdl_scale_history,
-    mdl_scorm,
-    mdl_scorm_aicc_session,
-    mdl_scorm_scoes,
-    mdl_scorm_scoes_data,
-    mdl_scorm_scoes_track,
-    mdl_scorm_seq_mapinfo,
-    mdl_scorm_seq_objective,
-    mdl_scorm_seq_rolluprule,
-    mdl_scorm_seq_rolluprulecond,
-    mdl_scorm_seq_rulecond,
-    mdl_scorm_seq_ruleconds,
+    //mdl_scorm,
+    //mdl_scorm_aicc_session,
+    //mdl_scorm_scoes,
+    //mdl_scorm_scoes_data,
+    //mdl_scorm_scoes_track,
+    //mdl_scorm_seq_mapinfo,
+    //mdl_scorm_seq_objective,
+    //mdl_scorm_seq_rolluprule,
+    //mdl_scorm_seq_rolluprulecond,
+    //mdl_scorm_seq_rulecond,
+    //mdl_scorm_seq_ruleconds,
     mdl_sessions,
     mdl_stats_daily,
     mdl_stats_monthly,
@@ -4891,7 +4909,7 @@ allow_tables_to_appear_in_same_query!(
     mdl_timezone,
     mdl_tool_customlang,
     mdl_tool_customlang_components,
-    mdl_turnitintooltwo,
+    //mdl_turnitintooltwo,
     mdl_turnitintooltwo_courses,
     mdl_turnitintooltwo_parts,
     mdl_turnitintooltwo_peermarks,

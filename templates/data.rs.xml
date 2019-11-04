@@ -1,0 +1,39 @@
+@use crate::FileMeta;
+@use chrono::prelude::*;
+
+@(kurskod: &str, kursnamn: &str, kursnamn2: &str, metas: &[FileMeta])
+<?xml version="1.0" encoding="utf-8"?>
+<Kursspecifikation_ver_2 xmlns="Kursspecifikation_ver_2">
+  <Identitet/>
+  <Beskrivning>Examinationsuppgifter_assignments</Beskrivning>
+  <Pakettyp>AIP</Pakettyp>
+  <DatumOchTid>@Utc::now().to_rfc3339_opts(SecondsFormat::Secs, true)</DatumOchTid>
+  <Leveranstyp>Kursinformation</Leveranstyp>
+  <Leveransspecifikation>Kursspecifikation_ver_2</Leveransspecifikation>
+  <Leveransoverenskommelse/>
+  <ArkivbildareNamn>KTH</ArkivbildareNamn>
+  <ArkivbildareIdentitetskod>202100-3054</ArkivbildareIdentitetskod>
+  <SystemNamn>Moodle</SystemNamn>
+  <LevererandeSystemNamn>@env!("CARGO_PKG_NAME")</LevererandeSystemNamn>
+  <LevererandeSystemVersion>@env!("CARGO_PKG_VERSION")</LevererandeSystemVersion>
+  <LevererandeOrganisationNamn>KTH</LevererandeOrganisationNamn>
+  <Gallring>false</Gallring>
+  <Sekretess>false</Sekretess>
+  <Informationsklass>0</Informationsklass>
+  <Referenskod>3.4.2</Referenskod>
+  <SkyddadePersonuppgifter>false</SkyddadePersonuppgifter>
+  <Notering>Beskrivning av arkivpaketet återfinns i separat arkivpaket i detta arkiv som återsöks genom värdet Bilda i element SystemNamn och värdet Kontext i element Notering</Notering>
+  <Kurs>
+    <Kurskod>@kurskod</Kurskod>
+    <Kursnamn>@kursnamn</Kursnamn>
+    <Kursnamn2>@kursnamn2</Kursnamn2>
+    <Kurstillfalle/>
+  </Kurs>
+  @for meta in metas {
+  <Bilaga>
+    <Filnamn>@meta.name</Filnamn>
+    <Beskrivning>@meta.desc</Beskrivning>
+    <Bevaras>true</Bevaras>
+    <Tid>@meta.time</Tid>
+  </Bilaga>}
+</Kursspecifikation_ver_2>
