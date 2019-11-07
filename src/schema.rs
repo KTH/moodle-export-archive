@@ -484,6 +484,7 @@ table! {
 }
 */
 
+/* Empty
 table! {
     mdl_cohort (id) {
         id -> Int8,
@@ -498,6 +499,7 @@ table! {
     }
 }
 
+/ Empty
 table! {
     mdl_cohort_members (id) {
         id -> Int8,
@@ -506,6 +508,7 @@ table! {
         timeadded -> Int8,
     }
 }
+ */
 
 // Verkar vara enskilda studenters kommentarer om vad de lämnat in.
 table! {
@@ -4671,8 +4674,8 @@ allow_tables_to_appear_in_same_query!(
     //mdl_choice,
     //mdl_choice_answers,
     //mdl_choice_options,
-    mdl_cohort,
-    mdl_cohort_members,
+    //mdl_cohort,
+    //mdl_cohort_members,
     mdl_comments,
     mdl_config,
     mdl_config_log,
