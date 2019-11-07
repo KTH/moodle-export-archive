@@ -22,12 +22,11 @@
   <Informationsklass>0</Informationsklass>
   <Referenskod>3.4.2</Referenskod>
   <SkyddadePersonuppgifter>false</SkyddadePersonuppgifter>
-  <Notering>Beskrivning av arkivpaketet återfinns i separat arkivpaket i detta arkiv som återsöks genom värdet Bilda i element SystemNamn och värdet Kontext i element Notering</Notering>
+  <Notering>Beskrivning av arkivpaketet återfinns i separat arkivpaket i detta arkiv som återsöks genom värdet Moodle i element SystemNamn och värdet Kontext i element Notering</Notering>
   <Kurs>
     <Kurskod>@kurskod</Kurskod>
     <Kursnamn>@kursnamn</Kursnamn>
-    <Kursnamn2>@kursnamn2</Kursnamn2>
-    <Kurstillfalle/>
+    <Kurstillfalle>@kursnamn2</Kurstillfalle>
   </Kurs>
   @for meta in metas {
   <Bilaga>

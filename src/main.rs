@@ -12,7 +12,8 @@ use diesel::prelude::*;
 use dotenv::dotenv;
 use slug::slugify;
 use std::env::var;
-use std::fs::{self, create_dir_all};
+use std::fs::{self, create_dir_all, File};
+use std::io::Write;
 use std::path::PathBuf;
 
 fn main() {
@@ -40,7 +41,7 @@ fn main() {
             create_dir_all(&path).unwrap();
             println!("{} {:?}", course_code, course);
             let mut files = Vec::new();
-            for (id, desc, mut content, due, modified) in ass.into_iter() {
+            for (id, desc, content, due, modified) in ass.into_iter() {
                 if !content.is_empty() {
                     let meta = FileMeta {
                         name: format!("{:04}-{}.txt", id, slugify(&desc)),
@@ -49,12 +50,17 @@ fn main() {
                             .timestamp(modified, 0)
                             .to_rfc3339_opts(SecondsFormat::Secs, true),
                     };
-                    content += &format!(
-                        "\n\nDue date: {}.\n",
+                    let mut data_file =
+                        File::create(path.join(&meta.name)).expect("Create archive file");
+                    write!(
+                        data_file,
+                        "{}\n\n{}\n\ndue date: {}.\n",
+                        meta.desc,
+                        content,
                         Utc.timestamp(due, 0)
                             .to_rfc3339_opts(SecondsFormat::Secs, true),
-                    );
-                    fs::write(path.join(&meta.name), &content).unwrap();
+                    )
+                    .expect("Write archive file");
                     files.push(meta);
                 } else {
                     println!("\t{}: {:?}", id, desc);
