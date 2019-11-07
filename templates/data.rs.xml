@@ -1,4 +1,4 @@
-@use crate::FileMeta;
+@use crate::{FileMeta, FmtLts};
 @use chrono::prelude::*;
 
 @(kurskod: &str, kursnamn: &str, kursnamn2: &str, metas: &[FileMeta])
@@ -7,7 +7,7 @@
   <Identitet/>
   <Beskrivning>Examinationsuppgifter_assignments</Beskrivning>
   <Pakettyp>AIP</Pakettyp>
-  <DatumOchTid>@Utc::now().to_rfc3339_opts(SecondsFormat::Secs, true)</DatumOchTid>
+  <DatumOchTid>@Utc::now().fmt_lts()</DatumOchTid>
   <Leveranstyp>Kursinformation</Leveranstyp>
   <Leveransspecifikation>Kursspecifikation_ver_2</Leveransspecifikation>
   <Leveransoverenskommelse/>

@@ -1,6 +1,6 @@
 [package]
 name = "moodle-export-archive"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Rasmus Kaj <kaj@kth.se>"]
 edition = "2018"
 build = "src/build.rs"

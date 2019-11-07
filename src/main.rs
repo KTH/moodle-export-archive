@@ -46,9 +46,7 @@ fn main() {
                     let meta = FileMeta {
                         name: format!("{:04}-{}.txt", id, slugify(&desc)),
                         desc,
-                        time: Utc
-                            .timestamp(modified, 0)
-                            .to_rfc3339_opts(SecondsFormat::Secs, true),
+                        time: Utc.timestamp(modified, 0).fmt_lts(),
                     };
                     let mut data_file =
                         File::create(path.join(&meta.name)).expect("Create archive file");
@@ -57,8 +55,7 @@ fn main() {
                         "{}\n\n{}\n\ndue date: {}.\n",
                         meta.desc,
                         content,
-                        Utc.timestamp(due, 0)
-                            .to_rfc3339_opts(SecondsFormat::Secs, true),
+                        Utc.timestamp(due, 0).fmt_lts(),
                     )
                     .expect("Write archive file");
                     files.push(meta);
@@ -88,6 +85,27 @@ fn get_course_code(s: &str) -> Option<&str> {
     }
     println!("Course code missing in {:?}", s);
     None
+}
+
+/// Format objects the way the KTH Long Time Storag wants them.
+///
+/// For a time, this in UTC like "2019-11-07T12:00.00", similar to RFC
+/// 3339, buth without trailing "Z" or timezone offset.
+trait FmtLts {
+    /// Format this thing the way the KTH Long Time Storage wants it.
+    fn fmt_lts(&self) -> String;
+}
+
+impl FmtLts for DateTime<Utc> {
+    fn fmt_lts(&self) -> String {
+        let mut text = self.to_rfc3339_opts(SecondsFormat::Secs, true);
+        if text.ends_with("Z") {
+            text.pop();
+            text
+        } else {
+            panic!("Unexpected date format: {:?}", text);
+        }
+    }
 }
 
 include!(concat!(env!("OUT_DIR"), "/templates.rs"));
