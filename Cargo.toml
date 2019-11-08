@@ -6,7 +6,7 @@ edition = "2018"
 build = "src/build.rs"
 
 [build-dependencies]
-ructe = "0.7.4"
+ructe = "0.8.0"
 
 [dependencies]
 chrono = "0.4.9"
