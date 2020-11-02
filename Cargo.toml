@@ -6,10 +6,12 @@ edition = "2018"
 build = "src/build.rs"
 
 [build-dependencies]
-ructe = "0.8.0"
+ructe = "0.12.0"
 
 [dependencies]
 chrono = "0.4.9"
-diesel = { version = "1.4.0", features = ["chrono", "postgres", "64-column-tables"] }
+diesel = { version = "1.4.0", features = ["chrono", "postgres"] }
 dotenv = "0.15"
 slug = "0.1.4"
+reqwest = { version = "0.10.8", features = ["blocking", "json"] }
+serde = { version = "1.0.89", features = ["derive"] }
